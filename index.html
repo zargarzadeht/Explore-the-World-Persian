@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="با کشورها، فرهنگ‌ها، جاذبه‌های گردشگری و حقایق جالب جهان آشنا شوید."
+    />
+
+    <title>کاوش جهان | Explore the World</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">کاوش <span>جهان</span></a>
+
+        <div class="nav-links">
+          <a href="#home">صفحه اصلی</a>
+          <a href="#countries">کشورها</a>
+          <a href="#about">درباره ما</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="hero-label">جهان را کشف کن</p>
+
+          <h1>به دنیای ماجراجویی خوش آمدید</h1>
+
+          <p class="hero-description">
+            با کشورهای زیبا، فرهنگ‌های شگفت‌انگیز، مکان‌های دیدنی و حقایق جالب
+            جهان آشنا شوید.
+          </p>
+
+          <a href="#countries" class="primary-button"> شروع کاوش </a>
+        </div>
+      </section>
+
+      <section class="countries-section" id="countries">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">ماجراجویی بعدی شما</p>
+
+            <h2>کشورهای جهان</h2>
+
+            <p>یک کشور را انتخاب کنید و با ویژگی‌های خاص آن آشنا شوید.</p>
+          </div>
+
+          <div class="search-container">
+            <label for="countrySearch" class="visually-hidden">
+              جست‌وجوی کشور
+            </label>
+
+            <input
+              type="search"
+              id="countrySearch"
+              placeholder="نام کشور را وارد کنید..."
+              autocomplete="off"
+            />
+          </div>
+
+          <p id="noResults" class="no-results" hidden>
+            کشوری پیدا نشد. نام دیگری را امتحان کنید.
+          </p>
+
+          <div class="countries-grid" id="countriesGrid"></div>
+        </div>
+      </section>
+
+      <section class="details-section" id="countryDetails" hidden>
+        <div class="container">
+          <button type="button" class="back-button" id="backButton">
+            بازگشت به کشورها ←
+          </button>
+
+          <div id="detailsContent"></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-content">
+          <p class="section-label">هدف ما</p>
+
+          <h2>درباره کاوش جهان</h2>
+
+          <p>
+            «کاوش جهان» یک وب‌سایت آموزشی است که برای معرفی کشورها، فرهنگ‌ها،
+            جاذبه‌های گردشگری و حقایق جالب طراحی شده است.
+          </p>
+
+          <p>
+            مکان‌های جدید را کشف کنید و چیزهای تازه‌ای درباره جهان شگفت‌انگیز ما
+            بیاموزید.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © <span id="currentYear">2026</span>
+          کاوش جهان | ساخته‌شده با هدف آموزش
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
